@@ -1,5 +1,11 @@
 <resources>
 
     <string name="app_name">testing-project</string>
-
+	
+    <string name="button_start">Start</string>
+    <string name="button_cancel">Cancel</string>
+    <string name="app_label">Testing Project</string>
+    
+    <string name="activity_label">Aktivnost\'</string>
+    
 </resources>

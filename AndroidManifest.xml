@@ -3,21 +3,32 @@
     android:versionCode="1"
     android:versionName="1.0" >
 
+    <!--
+        The application's compatibility with one or more versions of the Android
+        platform.
+
+        android:minSdkVersion = application's required minimum API level to run
+        android:targetSdkVersion = application's targeted API level
+    -->
     <uses-sdk
         android:minSdkVersion="10"
         android:targetSdkVersion="19" />
 
+    <!--
+        Permission to allow opening network sockets, access the Internet and load web pages in a WebView.
+    -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    
     <application
         android:allowBackup="true"
-        android:icon="@drawable/ic_launcher"
+        android:icon="@drawable/icon"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         
         <!--  -->
         <activity 
             android:label="@string/app_name"
-            android:name="com.example.testingproject.main.Main"
-            android:screenOrientation="portrait"
+            android:name="com.example.testing_project.mainApp.MainActivity"            
             >
             
             <intent-filter >
@@ -25,6 +36,21 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
             
+        </activity>
+        
+        <activity 
+            android:name="com.example.testing_project.mainApp.IndexActivity"
+            android:label="@string/app_name">            
+        </activity>
+        
+        <activity 
+            android:name="com.example.testing_project.mainApp.DescriptionActivity"
+            android:label="@string/app_name">            
+        </activity>
+        
+        <activity 
+            android:name="com.example.testing_project.testApp.TestActivity"
+            android:label="@string/app_name">            
         </activity>
         
     </application>
